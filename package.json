@@ -1,1 +1,40 @@
-{     "devDependencies": {         "orchestrate": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-orchestrate",     "homepage": "https://github.com/npmtest/node-npmtest-orchestrate",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-orchestrate.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for  [orchestrate (v0.8.2)](http://orchestrate.io/docs)  [![npm package](https://img.shields.io/npm/v/npmtest-orchestrate.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-orchestrate) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-orchestrate.svg)](https://travis-ci.org/npmtest/node-npmtest-orchestrate)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "orchestrate": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-orchestrate",
+    "keywords": [
+        "coverage",
+        "test",
+        "orchestrate"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_orchestrate.js",
+    "name": "npmtest-orchestrate",
+    "nameAlias": "npmtest_orchestrate",
+    "nameOriginal": "npmtest-orchestrate",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-orchestrate.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}

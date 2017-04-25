@@ -1,6 +1,7 @@
 # npmtest-orchestrate
 
-test coverage for  [orchestrate (v0.8.2)](http://orchestrate.io/docs)  [![npm package](https://img.shields.io/npm/v/npmtest-orchestrate.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-orchestrate) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-orchestrate.svg)](https://travis-ci.org/npmtest/node-npmtest-orchestrate)
+#### basic test coverage for  [orchestrate (v0.8.2)](http://orchestrate.io/docs)  [![npm package](https://img.shields.io/npm/v/npmtest-orchestrate.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-orchestrate) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-orchestrate.svg)](https://travis-ci.org/npmtest/node-npmtest-orchestrate)
+
 #### Orchestrate is a database service. It is a simple REST API that is optimized for queries. Orchestrate combines full-text search, graph, time-series, and key/value.
 
 [![NPM](https://nodei.co/npm/orchestrate.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/orchestrate)
@@ -9,7 +10,7 @@ test coverage for  [orchestrate (v0.8.2)](http://orchestrate.io/docs)  [![npm pa
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-orchestrate/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-orchestrate/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-orchestrate/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-orchestrate/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-orchestrate/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-orchestrate/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-orchestrate/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-orchestrate/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-orchestrate/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-orchestrate/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-orchestrate/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-orchestrate/build/coverage.html/index.html)
 
@@ -117,7 +118,8 @@ test coverage for  [orchestrate (v0.8.2)](http://orchestrate.io/docs)  [![npm pa
         "orchestrate",
         "driver"
     ],
-    "version": "0.8.2"
+    "version": "0.8.2",
+    "bin": {}
 }
 ```
 
